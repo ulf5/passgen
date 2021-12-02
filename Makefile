@@ -1,4 +1,4 @@
-.PHONY: dev-setup clean
+.PHONY: dev-setup clean install
 
 venv:
 	python -m venv venv
