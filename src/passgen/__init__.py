@@ -21,19 +21,20 @@ def generate_password(length, include_symbols=False):
 def _parse(args):
     parser = ArgumentParser(
         description='passgen',
-        formatter_class=ArgumentDefaultsHelpFormatter
+        formatter_class=ArgumentDefaultsHelpFormatter,
     )
 
     parser.add_argument(
         'length',
         type=int,
-        nargs=None
+        nargs='?',
+        default=32,
     )
     parser.add_argument(
         '-s',
         '--include-symbols',
         help='include symbols',
         default=False,
-        action='store_true'
+        action='store_true',
     )
     return parser.parse_intermixed_args(args)
