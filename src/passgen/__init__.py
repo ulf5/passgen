@@ -15,7 +15,7 @@ def generate_password(length, include_symbols=False):
     if include_symbols:
         alphabet += string.punctuation
 
-    return ''.join(secrets.choice(alphabet) for i in range(length))
+    return ''.join(secrets.choice(alphabet) for _ in range(length))
 
 
 def _parse(args):
