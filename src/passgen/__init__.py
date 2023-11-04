@@ -23,7 +23,6 @@ def _parse(args):
         description='passgen',
         formatter_class=ArgumentDefaultsHelpFormatter,
     )
-
     parser.add_argument(
         'length',
         type=int,
