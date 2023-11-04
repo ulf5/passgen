@@ -1,8 +1,7 @@
 # passgen
 
-Small program that can be used to generate passwords.
-Not to be confused with passgen on pypi.
-
+Small program that can be used to generate passwords.  
+**Not to be confused with passgen on pypi.**
 
 ```
 $ passgen -h
