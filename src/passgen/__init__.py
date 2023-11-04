@@ -14,7 +14,6 @@ def generate_password(length, include_symbols=False):
     alphabet = string.ascii_letters + string.digits
     if include_symbols:
         alphabet += string.punctuation
-
     return ''.join(secrets.choice(alphabet) for _ in range(length))
 
 
